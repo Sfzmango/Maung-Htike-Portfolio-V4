@@ -52,7 +52,7 @@ export default function App() {
 
       {/* <AboutMe /> */}
       <Projects />
-      <Contacts />
+      {/* <Contacts /> */}
 
       <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
         <div className="contactsContents">
