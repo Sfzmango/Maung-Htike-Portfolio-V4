@@ -14,9 +14,9 @@ export default function AboutMe() {
         textShadow: "1px 1px #000000"
     }
 
-    const linkdecor = {
-        textDecoration: "none"
-    }
+    // const linkdecor = {
+    //     textDecoration: "none"
+    // }
 
     return (
         <div className="projectsContents">
