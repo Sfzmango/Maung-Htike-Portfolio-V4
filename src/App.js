@@ -4,7 +4,13 @@ import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
 import logo from "./assets/logo.png";
 import resume from "./assets/resume.pdf";
+import background from "./assets/background.png";
+
 //import { Link } from "react-router-dom";
+
+const bg = {
+  backgroundImage: `url(${background})`
+}
 
 const navStyle = {
   background: "#222222",
@@ -16,7 +22,7 @@ const footerStyle = {
 
 export default function App() {
   return (
-    <div>
+    <div style={bg}>
 
       <header>
         <nav className="uk-width-1-1\@s uk-background-cover" uk-navbar="uk-navbar" style={navStyle}>
@@ -44,12 +50,31 @@ export default function App() {
         </nav>
       </header>
 
-      <AboutMe />
+      {/* <AboutMe /> */}
       <Projects />
       <Contacts />
-      <div className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
+
+      <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
+        <div className="contactsContents">
+
+          {/* <Link to="https://github.com/Sfzmango" target="_blank"> */}
+          <span
+            uk-icon="icon: github-alt; ratio: 1.5"></span>
+          {/* </Link> */}
+
+          {/* <Link to="https://twitter.com/Sfzm_" target="_blank"> */}
+          <span
+            uk-icon="icon: twitter; ratio: 1.5"></span>
+          {/* </Link> */}
+
+          {/* <Link to="https://www.linkedin.com/in/maung-htike-482b4b143/" target="_blank"> */}
+          <span
+            uk-icon="icon: linkedin; ratio: 1.5"></span>
+          {/* </Link> */}
+
+        </div>
         <p>- © Maung Htike, 2022 MIT. Made using the UIkit CSS framework -</p>
-      </div>
+      </footer>
     </div>
   );
 }
