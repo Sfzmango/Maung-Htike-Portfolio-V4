@@ -19,12 +19,11 @@ export default function AboutMe() {
 
             {/* about me card */}
             <article
-                className="uk-card uk-border-rounded uk-card-default uk-box-shadow-hover-xlarge uk-padding-small uk-margin-small-top uk-margin-large-bottom"
-                tabindex="-1">
+                className="uk-card uk-border-rounded uk-card-default uk-box-shadow-hover-xlarge uk-padding-small uk-margin-small-top uk-margin-large-bottom">
                 <h1 className="uk-text-center">About Me</h1>
                 <header>
                     <div className="uk-grid-small uk-flex-center uk-text-center" uk-grid="uk-grid">
-                        <div class=" uk-width-auto">
+                        <div className=" uk-width-auto">
 
                             <img className="uk-comment-avatar uk-border-circle uk-align-center" src={selfie} alt="selfie" />
                         </div>
@@ -103,20 +102,20 @@ export default function AboutMe() {
                 </div>
 
                 {/* solar test tech card  */}
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-bottom uk-border-rounded uk-box-shadow-hover-xlarge"
+                <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin-large-bottom uk-border-rounded uk-box-shadow-hover-xlarge"
                     uk-grid="uk-grid">
-                    <div class="uk-card-media-left uk-cover-container">
+                    <div className="uk-card-media-left uk-cover-container">
                         <img src={tech} alt="tech" uk-cover="uk-cover" />
                         <canvas width="600" height="400"></canvas>
                     </div>
                     <div>
-                        <div class="uk-card-body">
+                        <div className="uk-card-body">
                             <h1>Solar Test Technician</h1>
-                            <h3 class="uk-card-title">PVEL - Berkeley, CA
+                            <h3 className="uk-card-title">PVEL - Berkeley, CA
                                 <br />
                                 June 2019 to July 2020
                             </h3>
-                            <p class="uk-text-muted">Before the COVID-19 pandemic I worked as a Solar Lead Test
+                            <p className="uk-text-muted">Before the COVID-19 pandemic I worked as a Solar Lead Test
                                 Technician
                                 (night shift) at PV
                                 Evolution Labs. In simple terms, my duties involved leading a small group of test
@@ -134,19 +133,19 @@ export default function AboutMe() {
                 </div>
 
                 {/* digital media intern card */}
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-xlarge"
+                <div className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin uk-box-shadow-hover-xlarge"
                     uk-grid="uk-grid">
-                    <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <div className="uk-flex-last@s uk-card-media-right uk-cover-container">
                         <img src={intern} alt="intern" uk-cover="uk-cover" />
                         <canvas width="600" height="400"></canvas>
                     </div>
                     <div>
-                        <div class="uk-card-body">
+                        <div className="uk-card-body">
                             <h1>Digital Media Intern</h1>
-                            <h3 class="uk-card-title">Board of Directors - Redwood City, CA <br />
+                            <h3 className="uk-card-title">Board of Directors - Redwood City, CA <br />
                                 September 2017 to June 2018
                             </h3>
-                            <p class="uk-text-muted">I interned for David J. Canepa, the District 5 Supervisor of San Mateo
+                            <p className="uk-text-muted">I interned for David J. Canepa, the District 5 Supervisor of San Mateo
                                 County. I handled things in the office occasionally, but I mostly handled media related jobs
                                 such as taking pictures or videos of events and also editing them using software such as
                                 Adobe Premiere.
