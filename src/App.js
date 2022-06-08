@@ -9,7 +9,8 @@ import background from "./assets/background.png";
 //import { Link } from "react-router-dom";
 
 const bg = {
-  backgroundImage: `url(${background})`
+  backgroundImage: `url(${background})`,
+  backgroundSize: "cover"
 }
 
 const navStyle = {
@@ -19,6 +20,8 @@ const navStyle = {
 const footerStyle = {
   color: "black"
 };
+
+const [page, setPage] = setState
 
 export default function App() {
   return (
@@ -50,8 +53,8 @@ export default function App() {
         </nav>
       </header>
 
-      {/* <AboutMe /> */}
-      <Projects />
+      <AboutMe />
+      {/* <Projects /> */}
       {/* <Contacts /> */}
 
       <footer className="uk-container uk-margin-large-top uk-text-center" style={footerStyle}>
